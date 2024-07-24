@@ -21,15 +21,15 @@ public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-//    @NotBlank(message = "pid is mandatory")
+    @NotBlank(message = "pid is mandatory")
     @Column(name = "pid")
     private int pid;
 //    @NotBlank
-//    @NotBlank(message = "name is mandatory")
+    @NotBlank(message = "name is mandatory")
     @Column(name = "name")
     private String name;
 //    @NotBlank
-//    @NotBlank(message = "phone_no is mandatory")
+    @NotBlank(message = "phone_no is mandatory")
     @Column( unique = true)
     private String phone_no;
 //    @NotBlank
@@ -37,19 +37,19 @@ public class Patient {
     @Column(name = "gender")
     private String gender;
 //    @NotBlank
-//    @NotBlank(message = "address is mandatory")
+    @NotBlank(message = "address is mandatory")
     @Column(name = "address")
     private String address;
 
-//    @NotBlank(message = "appointment_date is mandatory")
+    @NotBlank(message = "appointment_date is mandatory")
     @Column(name = "appointment_date")
     private Date appointment_date;
 
-//    @NotBlank(message = "discharge_date is mandatory")
+    @NotBlank(message = "discharge_date is mandatory")
     @Column(name = "discharge_date")
     private Date discharge_date;
 //    @NotBlank
-//    @NotBlank(message = "hospital_id is mandatory")
+    @NotBlank(message = "hospital_id is mandatory")
     @Column(name = "hospitalId")
     private int hospitalId;
 
