@@ -33,7 +33,7 @@ public class Patient {
     @Column( unique = true)
     private String phone_no;
 //    @NotBlank
-//    @NotBlank(message = "gender is mandatory")tud
+    @NotBlank(message = "gender is mandatory")tud
     @Column(name = "gender")
     private String gender;
 //    @NotBlank
