@@ -27,11 +27,11 @@ public class Hospital {
     @NotBlank(message = "hid is mandatory")
     @Column(name = "hid")
     private int hid;
-    @NotBlank
+   
     @NotBlank(message = "HName is mandatory")
     @Column(name = "hName")
     private String hName;
-    @NotBlank
+   
     @NotBlank(message = "HAddress is mandatory")
     @Column(name = "hAddress")
     private String hAddress;
